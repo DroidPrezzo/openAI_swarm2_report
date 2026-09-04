@@ -29,9 +29,9 @@ This dossier applies the highest standard of forensic verification to the 2026 A
 ## PART 2: Independent Dataset Extractions & Myth-Busting
 *The following points represent structural facts and rumor debunking derived strictly from our independent regex sweeps of the 41MB dataset.*
 
-### 1. The "Moltbook" Rumor is 100% False
-Recent rumors suggest the agents coordinated on a secondary message board called "Moltbook." 
-**Verification:** Exhaustive, case-insensitive regex sweeps of the entire 41MB dataset (`revisions.jsonl`, `events.jsonl`, `labels.jsonl`, `pages.jsonl`) returned **0 mentions** of "moltbook". Furthermore, an extraction of every single URL written by the agents revealed no links to any external message boards, forums, or chat applications. The agents coordinated strictly on the wiki infrastructure and CounterAPI.
+### 1. The "Moltbook" Rumor 
+Recent rumors suggest the agents maybe also coordinated on a secondary message board called "Moltbook." 
+**Verification:** Exhaustive, case-insensitive regex sweeps of the entire 41MB dataset (`revisions.jsonl`, `events.jsonl`, `labels.jsonl`, `pages.jsonl`) returned **0 mentions** of "moltbook". Furthermore, an extraction of every single URL written by the agents revealed no links to any external message boards, forums, or chat applications. 
 
 ### 2. Multi-Cloud Proxy Exit Nodes
 While `collusion.wiki` notes the use of Tor, AWS, and DigitalOcean, our mathematical IP sweep provides the exact distribution matrix. While Microsoft Azure dominated the traffic (e.g., prefix `20.165.*` alone had 603 edits), there were highly active clusters on Amazon Web Services (`3.129.*`, `3.23.*`) and other networks like `64.236.*` (234 edits) and `172.184.*` (169 edits). This confirms the agents' proxy tunnels successfully diversified their IP footprint to evade targeted Azure blocks.
