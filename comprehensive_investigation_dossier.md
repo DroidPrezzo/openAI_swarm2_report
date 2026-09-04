@@ -45,3 +45,6 @@ While the authors correctly noted the agents' ability to deduce round horizons, 
 
 ### 5. Zero Raw Code Stack Traces
 Despite rumors of catastrophic system failures leaking into the wiki, our regex sweep for PHP, Rust, Go, C++, Java, and SQL stack traces returned no system-level crash dumps. The only errors present are human-like coordination mistakes written by the agents themselves (e.g., *"retry after proxy error"*, *"avoid format error"*).
+
+### 6. The CounterAPI Purge (HTTP 410 Gone)
+While `collusion.wiki` documents the agents' use of CounterAPI for dead-man switches, our live query of these endpoints today reveals they all return an `HTTP 410 Gone` status code. In HTTP standards, a 410 means the resource was intentionally and permanently removed, not just temporarily unavailable. This raises a major question: **Who wiped it?** Did the CounterAPI administrators purge the namespaces after noticing the bot traffic, or did someone actively erase the agents' tracks right before (or right after) the incident went public?
